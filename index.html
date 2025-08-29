@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Professional To‑Do App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <div class="logo">
+          <div class="logo-icon">FT</div>
+          <div class="brand-text">
+            <span class="logo-text">Focus<span>Track</span>
+            <div class="app-sub">Organize. Focus. Deliver.</div>
+          </div>
+        </div>
+
+        <button id="toggleSidebar" class="sidebar-toggle" title="Collapse sidebar">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <div class="welcome-block">
+        <div id="greeting" class="greeting">Welcome</div>
+        <div class="greeting-sub" id="greetingSub">Let's make today productive.</div>
+        <button id="editNameBtn" class="edit-name">Edit name</button>
+      </div>
+
+      <div class="categories-header">
+        <div class="title">Categories</div>
+      </div>
+
+      <ul id="categoryList" class="category-list" aria-label="Categories"></ul>
+
+      <div class="category-add">
+        <input id="newCategoryInput" placeholder="Create category " aria-label="New category" />
+        <button id="addCategoryBtn">Add</button>
+      </div>
+
+    </aside>
+
+    <main class="main">
+     
+      <header class="main-header">
+       
+        <h1 id="selectedCategoryTitle">Select a category</h1>
+        
+        <div class="controls">
+          <div class="filters" role="tablist" aria-label="Task filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pending">Pending</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+          </div>
+
+          <button id="clearAllBtn" class="clear-btn" title="Clear all tasks in this category">Clear All</button>
+        </div>
+      </header>
+
+      <section class="task-input">
+        <input id="taskInput" placeholder="Add a new task and press Enter" aria-label="New task" />
+        <button id="addTaskBtn">Add Task</button>
+      </section>
+
+      <ul id="taskList" class="task-list" aria-live="polite"></ul>
+    </main>
+    
+  </div>
+
+ <!-- Footer -->
+ <footer class="app-footer">
+  <p>© 2025 FocusTrack — Built with ❤️ by Eiba </p>
+  <p><a href="https://github.com/ebaa_anas/FocusTrack" target="https://github.com/ebaa-anas/focus-track.git">View on GitHub</a></p>
+ </footer>
+
+  <!-- Name modal -->
+  <div id="nameModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="nameModalTitle">
+    <div class="modal-content">
+      <h2 id="nameModalTitle">Welcome 👋</h2>
+      <p>What's your name? We'll remember it on this device.</p>
+      <input id="nameInput" placeholder="Your name" />
+      <div class="modal-actions">
+        <button id="saveNameBtn" class="primary">Save</button>
+        <button id="skipNameBtn" class="secondary">Skip</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
