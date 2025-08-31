@@ -1,20 +1,20 @@
-# FocusTrack – To-Do App ✅
+ FocusTrack – To-Do Website ✅
 
 A simple and elegant to-do app to organize your tasks, stay focused, and be productive.
 
-## Features
+ Features
 - Add and delete tasks
 - Organize tasks into categories
 - Filter tasks by status (All, Pending, Completed)
 - Save your progress locally
 
-## Tech Stack
+ Technologies Used
 - HTML
 - CSS
 - JavaScript
 
-## Live Demo
+ Live Demo
 🚀 [Try it here](https://ebaa-anas.github.io/focus-track/)
 
-## Source Code
-💻 [GitHub Repo](https://github.com/ebaa-anas/focus-track)
+💡 Author 
+   Designed & coded with ❤️ by https://github.com/ebaa-anas
